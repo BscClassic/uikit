@@ -1,6 +1,6 @@
 {
-  "name": "@bsccswap/uikit",
-  "version": "1.0.0",
+  "name": "@pancakeswap/uikit",
+  "version": "0.40.0",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -8,10 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pancakeswap/pancake-toolkit.git#master"
-  },
+  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
@@ -22,8 +19,7 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test": "jest",
-    "prepublishOnly": "yarn build",
-    "build-storybook": "build-storybook"
+    "prepublishOnly": "yarn build"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -31,24 +27,14 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@storybook/addon-actions": "^4.1.18",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.3.0",
-    "@storybook/addons": "^6.3.0",
-    "@storybook/react": "^6.3.0",
-    "@storybook/theming": "^6.3.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.5",
     "@types/react-dom": "^17.0.5",
-    "@types/styled-components": "^5.1.10",
-    "babel-loader": "^8.2.2",
     "jest-styled-components": "^7.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.0",
-    "themeprovider-storybook": "^1.7.2"
+    "styled-components": "^5.2.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -57,23 +43,15 @@
     "styled-components": "^5.2.3"
   },
   "dependencies": {
-    "@pancakeswap-libs/uikit": "^0.29.4",
     "@popperjs/core": "^2.9.2",
-    "@storybook/addon-a11y": "^4.1.18",
     "@types/lodash": "^4.14.168",
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",
     "react-popper": "^2.2.5",
     "react-transition-group": "^4.4.1",
-    "rollup": "^2.52.3",
     "styled-system": "^5.1.5"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "bugs": {
-    "url": "https://github.com/pancakeswap/pancake-toolkit/issues"
-  },
-  "homepage": "https://github.com/pancakeswap/pancake-toolkit/tree/master#readme",
-  "author": "bsxadmin"
+  }
 }
